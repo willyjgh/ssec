@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- META SECTION -->
+    <title>LOGIN | APP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" th:href="@{/static/img/pln.ico}" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" id="theme" th:href="@{/static/css/theme-white.css}"/>
+</head>
+<body>
+<div class="login-container">
+    <div class="login-box animated fadeInDown">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="text-center">
+                    <img th:src="@{/static/img/logopln02.png}"/>
+                </div>
+            </div>
+            <form id="" th:action="@{/login}"  method="post">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <!--<label>Id User</label>-->
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                            <input type="text" class="form-control"
+                                   id ="username" name="username"
+                                   placeholder="Id User"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--<label>Password</label>-->
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-key"></span></span>
+                            <input type="password" class="form-control" name="password"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-info btn-block">Login</button>
+
+                </div>
+                <div class="panel-body">
+                    <div class="text-center">
+                        Copyright &copy; 2018 PT. PLN (Persero)
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/static/js/plugins/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/plugins/bootstrap/bootstrap.min.js}"></script>
+</body>
+</html>
